@@ -6,56 +6,64 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   
   </head>
-  <body>
-<nav id="navbar" class=" w-full bg-blue-700 shadow-lg transition-transform duration-300 transform-gpu z-50">
-<div class="container mx-auto px-6 py-y flex justify-between items-center">
-    <!--Norm Head-->
-<a href="#" class="hover:bg-blue-300 transition-colors"><img src="/normheader.png" alt="normhead"> </a>
-<!--Desktop Navbar-->
-<ul class="hidden md:flex space-x-4 text-gray-200 font-medium">
-    <li><a href="">Drinks</a></li>
-    <li><a href="">People</a></li>
-    <li><a href="">Drama</a></li>
-    <li><a href="">Advice</a></li>
-
-</ul>
-<!--Mobile Button-->
-<button id="menu-button" class="md:hidden flex items-center text-gray-700">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-        class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-    </svg>
-</button>
-</div>
-
-<!--Mobile Nav Sidebar-->
-<div id="mobile-nav-sidebar"
-    class="absolute bg-gray-900 text-white w-56 min-h-screen overflow-y-auto transition-transform -translate-x-full ease-in-out duration-300 ">
-    <div class="p-4">
-        <h1>This is a Side Bar</h1>
-        <ul class="space-y-4 p-4  font-medium">
-            <li class="mb-2"><a href="#" class="block hover:text-blue-500 transition colors">Drinks</a></li>
-            <li class="mb-2"><a href="#" class="block hover:text-blue-500 transition colors">People</a></li>
-            <li class="mb-2"><a href="#" class="block hover:text-blue-500 transition colors">Drama</a></li>
-            <li class="mb-2"><a href="#" class="block hover:text-blue-500 transition colors">Advice</a></li>
-
-        </ul>
+  <body class="h-screen flex overflow-hidden bg-gray-200">
+  
+    <div id="mobile-nav-sidebar"
+        class="absolute bg-gray-900 text-white w-56 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-300 ">
+        <div class="p-4">
+            <h1>This is a Side Bar</h1>
+            <ul class="space-y-4 p-4  font-medium">
+                <li class="mb-2"><a href="#" class="block hover:text-blue-500 transition colors">Drinks</a></li>
+                <li class="mb-2"><a href="#" class="block hover:text-blue-500 transition colors">People</a></li>
+                <li class="mb-2"><a href="#" class="block hover:text-blue-500 transition colors">Drama</a></li>
+                <li class="mb-2"><a href="#" class="block hover:text-blue-500 transition colors">Advice</a></li>
+    
+            </ul>
+        </div>
+    
+    </div>
+    <div class="flex-1 flex flex-col overflow-hidden">
+        <nav id="navbar" class=" bg-blue-700 shadow-lg ">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <!--Norm Head-->
+                <a href="#" class="hover:bg-blue-300 transition-colors"><img src="/normheader.png" alt="normhead"> </a>
+                <!--Desktop Navbar-->
+                <ul class="hidden md:flex space-x-4 text-gray-200 font-medium">
+                    <li><a href="">Drinks</a></li>
+                    <li><a href="">People</a></li>
+                    <li><a href="">Drama</a></li>
+                    <li><a href="">Advice</a></li>
+        
+                </ul>
+                <!--Mobile Button-->
+                <button id="menu-button" class="md:hidden flex items-center text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        
+            <!--Mobile Nav Sidebar-->
+        
+        
+        </nav>
+        
+        
+        <main>
+            <section class="p-4 m-5">
+                <p class="text-9xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quos maiores libero quis
+                    aliquam minima obcaecati, doloremque laudantium enim doloribus nihil facere dolore aspernatur laboriosam eum
+                    ullam provident. Explicabo, porro!</p>
+            </section>
+            <section class="p-4 m-5">
+                <p class="text-9xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quos maiores libero quis
+                    aliquam
+                    minima obcaecati, doloremque laudantium enim doloribus nihil facere dolore aspernatur laboriosam eum ullam
+                    provident. Explicabo, porro!</p>
+            </section>     </main>
     </div>
 
-</div>
-
-
-</nav>
-<main>
-<section class="p-4 m-5">
-    <p class="text-9xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quos maiores libero quis aliquam minima obcaecati, doloremque laudantium enim doloribus nihil facere dolore aspernatur laboriosam eum ullam provident. Explicabo, porro!</p>
-</section>
-<section class="p-4 m-5">
-    <p class="text-9xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quos maiores libero quis aliquam
-        minima obcaecati, doloremque laudantium enim doloribus nihil facere dolore aspernatur laboriosam eum ullam
-        provident. Explicabo, porro!</p>
-</section>
-</main>
   </body>
 <script >
         const menuButton = document.getElementById("menu-button")
